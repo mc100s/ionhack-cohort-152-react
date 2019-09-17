@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Navbar {
+  background-color: #2e7bf6;
+  color: white;
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar__main {
+  font-weight: 700;
+}
+.Navbar__burger {
+  height: 40px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+
+.Flag {
+  height: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+.PostIt {
+  background-color: gold;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* To create a box, inside .PostIt (at the end) */
+.PostIt::after {
+  content: ""; /* Mandatory */
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  right: 0;
+  bottom: 0;
+  border-top: 10px solid rgba(0, 0, 0, 0.2);
+  border-left: 10px solid  rgba(0, 0, 0, 0.2);
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
+}
+.postit-container {
+  display: flex;
+  flex-wrap: wrap;
+}
